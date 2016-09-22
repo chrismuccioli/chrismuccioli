@@ -21,13 +21,18 @@ body {
 }
 
 /* fade image in after load */
-.lazyload,
-.lazyloading {
+.lazyload {
     opacity: 0;
 }
 .lazyloaded {
     opacity: 1;
-    transition: opacity 800ms;
+    transition: opacity 500ms;
+}
+
+.lazyloading {
+    opacity: 1;
+    transition: opacity 100ms;
+    background: #000000 url(/../images/loader.gif) no-repeat center;
 }
 
 //Utilities
