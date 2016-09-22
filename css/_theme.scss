@@ -1,0 +1,553 @@
+//Overridden Variables
+
+$monospace-font-family: 'Roboto Mono', monospace;
+
+.gif-container {
+  display: inline-block;
+  width: 100%;
+}
+
+body {
+  background-color: #000000;
+}
+
+.project-footer {
+  float: left;
+}
+
+.lazy {
+  width: 100%;
+  height: auto;
+}
+
+/* fade image in after load */
+.lazyload,
+.lazyloading {
+    opacity: 0;
+}
+.lazyloaded {
+    opacity: 1;
+    transition: opacity 800ms;
+}
+
+//Utilities
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.flip-text {
+  -webkit-transform:rotate(-180deg);
+  -moz-transform:rotate(-180deg);
+  -o-transform:rotate(-180deg);
+  transform:rotate(-180deg);
+  ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+
+.clear-link {
+  a {
+  border-bottom: 0;
+  }
+}
+
+// General Styling
+
+body {
+  background: #000000;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px white solid;
+  padding-bottom: 2.5px;
+}
+
+a:hover {
+    color: #5c00ff;
+    border-bottom-color: #5c00ff;
+    cursor: pointer;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+.content {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.fuck-yeah-usa {
+  width: 100%;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  img {
+    height: 20px;
+  }
+}
+
+// Homepage Styling
+
+.mono {
+  font-weight: 100;
+  font-family: $monospace-font-family;
+}
+
+.mono-bold {
+  font-family: $monospace-font-family;
+  font-weight: 100 !important;
+  letter-spacing: .15em;
+  padding-top: 4px;
+}
+
+.index-project {
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+//---- Homepage Project Description----//
+.index-project-description {
+  padding-top: 1.3em;
+  & .details {
+    width: 35%;
+    float: left;
+    h4 {
+      text-align: left;
+
+    }
+    h6 {
+      float: left;
+      font-family: $monospace-font-family;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      padding-right: 10%;
+      padding-bottom: 60px;
+      padding-top: 0.4em;
+
+    }
+  }
+  & .view-project {
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h6 {
+      float: left;
+      font-family: $monospace-font-family;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      padding-right: 15px;
+    }
+    & .long-arrow-right {
+      float: right;
+    }
+  }
+
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+.index-project-description {
+  padding-left: 5%;
+  padding-right: 5%;
+  & .details {
+    width: 100%;
+    h6 {
+      padding-bottom: 3em;
+    }
+    h4 {
+      padding-left: 50%;
+    }
+  }
+  & .view-project {
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 3em;
+  }
+}
+
+}
+
+/****  Cycle Project Index Image ****/
+
+.project-container {
+    width: 100%;
+}
+.project-container .project-outer {
+    width: 100%;
+    padding-top: 45%; /* defines aspect ratio */
+    position: relative;
+}
+.project-container .project-outer .project-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.project-block {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    a.project-slide-link {
+    position:absolute;
+    max-width: 100%;
+    height: 800px;
+    display: block;
+    // z-index: 10;
+    }
+    a.project-slide-link:hover{
+    background-position: center -150px;
+  }
+    & .slide {
+      width: 100vw;
+      height: 800px;
+      overflow: hidden;
+      position: relative;
+      background-size: cover;
+    }
+}
+.slides{
+    // z-index:0;
+    visibility:hidden;
+    margin-top: -25px;
+}
+.slides.active{
+    visibility:visible;
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .slides {
+    display: none;
+  }
+}
+
+// Nav Styling
+
+.top-nav, .bottom-nav {
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  li {
+    display: inline;
+    list-style-type: none;
+    padding-left: 5px;
+  }
+  h4 {
+    font-family: $monospace-font-family;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  }
+}
+.top-nav {
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    top: 0;
+  }
+
+.bottom-nav {
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    bottom: 0;
+  }
+
+// Project Page
+
+#video-cropping {
+  margin-bottom: -5px;
+}
+
+$caption-padding: .25%;
+
+.project-intro {
+  padding-top: 15%;
+  padding-bottom: 10%;
+  width: 100%;
+  & .caption {
+    h6 {
+      padding-bottom: 10px;
+    }
+    padding-bottom: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}
+
+.project-footer-content {
+  li {
+    list-style-type: none;
+  }
+  ul {
+    padding-left: 0;
+  }
+  width: (4/12 * 100%);
+  float: left;
+  h6 {
+  font-family: $monospace-font-family;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  }
+}
+
+.project-footer {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.project-nav {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%;
+  li {
+    list-style-type: none;
+  }
+  ul {
+    padding-left: 0;
+  }
+  h4 {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-family: $monospace-font-family;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.project-footer {
+  padding-bottom: 30px;
+  width: (12/12 * 100%);
+  float: left;
+  box-sizing: border-box;
+}
+
+$project-padding: 2em;
+
+.project-group {
+  padding-top: ($project-padding *2);
+  padding-bottom: ($project-padding *2);
+}
+
+.project-image {
+  display: flex;
+  width: 100%;
+  padding-bottom: $project-padding;
+  img {
+    width: 100%;
+  }
+  & .bottom {
+    align-items: center;
+    margin-top: auto;
+    padding-bottom: $project-padding;
+  }
+  & .right {
+      text-align: right;
+  }
+  // & .project-image-left {
+  //   width: (6/12 * 100%);
+  //   padding-right: $project-padding;
+  //   & .caption {
+  //     width: (6/12 * 100%);
+  //   }
+  // }
+  & .project-image-50 {
+    width: (6/12 * 100%);
+  }
+  & .project-image-left {
+    width: (8/12 * 100%);
+    padding-right: $project-padding;
+  }
+  & .project-image-right {
+      width: (8/12 * 100%);
+      padding-left: $project-padding;
+    }
+  // & .project-image-right {
+  //   width: (6/12 * 100%);
+  //   padding-left: $project-padding;
+  // }
+  & .project-caption, .caption, .caption-left, .caption-right {
+    width: (4/12 * 100%);
+    padding-bottom: $project-padding;
+  }
+}
+
+.project-image-full {
+  flex-flow: row wrap;
+  & .project-caption, .caption {
+    padding-top: $project-padding;
+  }
+}
+
+.caption, .project-caption, .caption-right, .caption-left {
+  h6 {
+    font-family: $monospace-font-family;
+    text-transform: uppercase;
+    padding-bottom: ($project-padding * .5);
+  }
+  h2 {
+    padding-bottom: ($project-padding * .2);
+  }
+  padding-top: $project-padding;
+  padding-bottom: $project-padding;
+}
+
+.caption-right {
+  padding-right: (2/12 * 100%);
+}
+
+.caption-left {
+  padding-left: (2/12 * 100%);
+}
+
+.full-video {
+  width: 100%;
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+ .project-image {
+  flex-flow: row wrap;
+  & .project-image-left {
+    width: 100%;
+    padding-right: 0;
+  }
+  & .right {
+      text-align: left;
+  }
+  & .project-image-right {
+    width: 100%;
+    padding-left: 0;
+  }
+  & .project-caption, .caption {
+    width: 90%;
+    padding: $project-padding;
+  }
+  & .bottom {
+    padding-bottom: $project-padding !important;
+  }
+ }
+
+}
+
+
+@media screen and (max-width: $breakpoint-sm) {
+
+
+.project-footer-content {
+  text-align: center;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.bottom-nav, .top-nav {
+  padding: 5%;
+}
+
+.project-intro {
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 20%;
+  & .caption {
+    h6 {
+    padding-bottom: 10px;
+    }
+    padding-bottom: 20px;
+  }
+}
+
+}
+
+@media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+  .role-headline, .role-content, .project-headline, .project-content {
+      padding-top: 20px !important;
+    }
+  .flag-button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+// Phone Breakpoint
+@media screen and (max-width: $breakpoint-sm) {
+.content {
+  padding-left: 0;
+  padding-right: 0;
+}
+  .intro {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+
+  .flag-button {
+    float: right;
+  }
+
+}
+
+/**
+ * VH and VW units can cause issues on iOS devices: http://caniuse.com/#feat=viewport-units
+ *
+ * To overcome this, create media queries that target the width, height, and orientation of iOS devices.
+ * It isn't optimal, but there is really no other way to solve the problem. In this example, I am fixing
+ * the height of element `.foo` —which is a full width and height cover image.
+ *
+ * iOS Resolution Quick Reference: http://www.iosres.com/
+ */
+
+$intro-padding: .25;
+
+.intro {
+  padding-top: 100vh*$intro-padding;
+  padding-bottom: 100vh*$intro-padding;
+}
+
+/**
+ * iPad with portrait orientation.
+*/
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+  .intro {
+    padding-top: 1024px*$intro-padding;
+    padding-bottom: 1024px*$intro-padding;
+  }
+}
+
+/**
+ * iPad with landscape orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+  .intro {
+    padding-top: 768px*$intro-padding;
+    padding-bottom: 768px*$intro-padding;
+  }
+}
+
+/**
+ * iPhone 5
+ * You can also target devices with aspect ratio.
+ */
+@media screen and (device-aspect-ratio: 40/71) {
+  .intro {
+    padding-top: 500px*$intro-padding;
+    padding-bottom: 500px*$intro-padding;
+  }
+}
