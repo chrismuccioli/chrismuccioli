@@ -285,7 +285,7 @@ h4,
 .h4 {
   font-size: 16px;
   letter-spacing: 0.15em;
-  line-height: 1.42em; }
+  line-height: 1.5em; }
 
 h5,
 .h5 {
@@ -783,7 +783,7 @@ a:hover {
   border-bottom-color: #3cf0a7;
   cursor: pointer; }
   a:hover .arrow-line {
-    stroke: #24de77; }
+    stroke: #3cf0a7; }
 
 li {
   padding-bottom: 10px; }
