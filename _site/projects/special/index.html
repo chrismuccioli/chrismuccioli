@@ -30,7 +30,7 @@
 
 		  <div class="clearfix content">
 
-    <div class="project-intro col">
+    <div class="project-intro col fade-in">
       <div class="col lg-col-4 sm-col-12">
         <div class="caption">
           <h6> Project </h6>
@@ -38,7 +38,7 @@
         </div>
         <div class="caption">
           <h6> Role </h6>
-          <h4>Branding, Identity</h4>
+          <h4>Branding</h4>
         </div>
       </div>
       <div class="col lg-col-8 sm-col-12">
@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <div class="project-image project-image-full">
+    <div class="project-image project-image-full fade-in">
       <div class="full-video">
         <video width="100%" height="auto" autoplay loop>
           <source src="/../images/special-animated-chrismuccioli.mp4" type="video/mp4">
@@ -67,12 +67,12 @@
           <h4>Vibrant sale and special signage found throughout grocery stores and bodegas in Brooklyn provided inspiration for the identity. Common typefaces with character reference the different types of subjects encounted on the streets.</h4>
       </div>
       <div class="project-image-right">
-        <img src="/../images/special-inspiration-chrismuccioli.gif">
+        <img class="lazyload" data-src="/../images/special-inspiration-chrismuccioli.gif" alt="Desert Road" title="Model" width="100%" height="100%"/>
       </div>
     </div>
 
     <div class="project-image project-image-full">
-        <img src="/../images/special-cards-notebook-chrismuccioli.jpg" class="fill">
+        <img class="lazyload" data-src="/../images/special-cards-notebook-chrismuccioli.jpg" alt="Desert Road" title="Model" width="100%" height="100%"/>
         <div class="caption">
           <h6>Business Cards & Scouting Notepad</h6>
           <h4>Business cards needed to feel legitimate enough for someone to feel comfortable with the interaction and memorable enough to remember the interaction when called upon. Sturdy, plastic cards were chosen that mimicked the discount vernacular we referenced in naming.</h4>
@@ -80,7 +80,7 @@
     </div>
 
     <div class="project-image project-image-full">
-        <img src="/../images/special-street-chrismuccioli.jpg" class="fill">
+        <img class="lazyload" data-src="/../images/special-street-chrismuccioli.jpg" alt="Desert Road" title="Model" width="100%" height="100%"/>
     </div>
 
     <div class="project-image">
@@ -89,12 +89,12 @@
         <h4>Subjects scouted on the streets of NYC.</h4>
       </div>
       <div class="project-image-right">
-        <img src="/../images/special-street-model-chrismuccioli.jpg">
+        <img class="lazyload" data-src="/../images/special-street-model-chrismuccioli.jpg" alt="Desert Road" title="Model" width="100%" height="100%"/>
       </div>
     </div>
 
     <div class="project-image project-image-full">
-        <img src="/../images/special-cardpile-chrismuccioli.jpg" class="fill">
+        <img class="lazyload" data-src="/../images/special-cardpile-chrismuccioli.jpg" alt="Desert Road"title="Model"  width="100%" height="100%"/>
     </div>
 
 
@@ -107,6 +107,7 @@
       </div>
     </div>
     <div class="project-nav caps mono-bold clear-link">
+<a href="/../projects/singles-club/">
 <div class="arrow">
     <svg width="88px" height="15px" viewBox="529 68 88 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(573.000000, 75.500000) scale(-1, 1) translate(-573.000000, -75.500000) translate(530.000000, 69.000000)" stroke-linecap="square">
@@ -116,7 +117,9 @@
         </g>
     </svg>
   </div>
+</a>
 <h4>Next Project</h4>
+<a href="/../projects/lodge/">
 <div class="arrow">
     <svg style="left: 0;" width="88px" height="15px" viewBox="1223 1274 88 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(1224.000000, 1275.000000)" stroke-linecap="square">
@@ -126,6 +129,7 @@
         </g>
     </svg>
   </div>
+</a>
 </div>
 
   </div>
@@ -145,8 +149,8 @@
 		// Cycle plugin
 		$('.slides').cycle({
 		    fx:     'none',
-		    speed:   1,
-		    timeout: 70
+		    speed:   85,
+		    timeout: 5
 		}).cycle("pause");
 
 		// Pause & play on hover

@@ -285,7 +285,7 @@ h4,
 .h4 {
   font-size: 16px;
   letter-spacing: 0.15em;
-  line-height: 1.42em; }
+  line-height: 1.5em; }
 
 h5,
 .h5 {
@@ -745,18 +745,14 @@ body {
 .project-footer {
   float: left; }
 
-.lazy {
-  width: 100%;
-  height: auto; }
-
 /* fade image in after load */
-.lazyload,
-.lazyloading {
+.lazyload {
   opacity: 0; }
 
-.lazyloaded {
+.lazyloading {
   opacity: 1;
-  transition: opacity 800ms; }
+  transition: opacity 300ms;
+  background: #000000 url(/../images/loader.gif) no-repeat center; }
 
 .no-wrap {
   white-space: nowrap; }
@@ -783,9 +779,11 @@ a {
   padding-bottom: 2.5px; }
 
 a:hover {
-  color: #5c00ff;
-  border-bottom-color: #5c00ff;
+  color: #3cf0a7;
+  border-bottom-color: #3cf0a7;
   cursor: pointer; }
+  a:hover .arrow-line {
+    stroke: #3cf0a7; }
 
 li {
   padding-bottom: 10px; }
@@ -846,6 +844,9 @@ li {
       padding-right: 15px; }
     .index-project-description .view-project .long-arrow-right {
       float: right; }
+
+.arrow-line {
+  stroke: #ffffff; }
 
 @media screen and (max-width: 40em) {
   .index-project-description {
