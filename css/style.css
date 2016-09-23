@@ -807,6 +807,9 @@ li {
   letter-spacing: 0.15em;
   text-transform: uppercase; }
 
+@supports (overflow: -webkit-marquee) and (justify-content: inherit) {
+  .mono {
+    font-weight: 400; } }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .mono {
     font-weight: 400; }

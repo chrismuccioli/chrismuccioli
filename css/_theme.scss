@@ -105,6 +105,14 @@ $mono-ls: .15em;
   text-transform: uppercase;
 }
 
+// Scopes to Safari Only
+@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
+  .mono {
+    font-weight: 400;
+  }
+}
+
+// Scopes to Retina Screens
 @media
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
