@@ -4,10 +4,10 @@
     <title>Chris Muccioli</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>https://chrismuccioli.github.io/chris-muccioli//chris-muccioli/</link>
-    <atom:link href="https://chrismuccioli.github.io/chris-muccioli//chris-muccioli/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 22 Sep 2016 16:25:52 -0400</pubDate>
-    <lastBuildDate>Thu, 22 Sep 2016 16:25:52 -0400</lastBuildDate>
+    <link>https://chrismuccioli.github.io/chrismuccioli//chris-muccioli/</link>
+    <atom:link href="https://chrismuccioli.github.io/chrismuccioli//chris-muccioli/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 23 Sep 2016 12:08:35 -0400</pubDate>
+    <lastBuildDate>Fri, 23 Sep 2016 12:08:35 -0400</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Fri, 26 Aug 2016 15:54:39 -0400</pubDate>
-        <link>https://chrismuccioli.github.io/chris-muccioli//chris-muccioli/jekyll/update/2016/08/26/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">https://chrismuccioli.github.io/chris-muccioli//chris-muccioli/jekyll/update/2016/08/26/welcome-to-jekyll.html</guid>
+        <link>https://chrismuccioli.github.io/chrismuccioli//chris-muccioli/jekyll/update/2016/08/26/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">https://chrismuccioli.github.io/chrismuccioli//chris-muccioli/jekyll/update/2016/08/26/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>

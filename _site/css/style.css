@@ -296,8 +296,9 @@ h5,
 h6,
 .h6 {
   font-size: 10px;
-  letter-spacing: 0.3em;
-  line-height: 1.65em; }
+  letter-spacing: 0.4em;
+  line-height: 1.65em;
+  font-weight: 400; }
 
 .list-reset {
   list-style: none;
@@ -801,15 +802,20 @@ li {
     height: 20px; }
 
 .mono {
-  font-weight: 100;
-  font-family: "Roboto Mono", monospace; }
-
-.mono-bold {
+  font-weight: 200;
   font-family: "Roboto Mono", monospace;
-  font-weight: 100 !important;
-  letter-spacing: .15em;
-  padding-top: 4px; }
+  letter-spacing: 0.15em;
+  text-transform: uppercase; }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .mono {
+    font-weight: 400; }
+
+  h6 {
+    font-weight: 400; }
+
+  h1, h2, h3, h4, h5, p {
+    font-weight: 200; } }
 .index-project {
   float: left;
   box-sizing: border-box;
@@ -917,10 +923,6 @@ li {
     display: inline;
     list-style-type: none;
     padding-left: 5px; }
-  .top-nav h4, .bottom-nav h4 {
-    font-family: "Roboto Mono", monospace;
-    letter-spacing: .15em;
-    text-transform: uppercase; }
 
 .top-nav {
   padding-top: 2%;
@@ -1130,6 +1132,35 @@ li {
   .intro {
     padding-top: 125px;
     padding-bottom: 125px; } }
+.video-body {
+  box-sizing: border-box; }
+
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99; }
+
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; }
+
+@media (min-aspect-ratio: 16 / 9) {
+  .video-foreground {
+    height: 300%;
+    top: -100%; } }
+@media (max-aspect-ratio: 16 / 9) {
+  .video-foreground {
+    width: 300%;
+    left: -100%; } }
 .white {
   color: #ffffff; }
 
