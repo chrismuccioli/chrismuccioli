@@ -313,6 +313,9 @@ $caption-padding: .25%;
     padding-left: 1%;
     padding-right: 1%;
   }
+  .lg-col-4 {
+    padding-right: 3%;
+  }
 }
 
 .project-footer-content {
@@ -554,8 +557,14 @@ $intro-padding: .25;
 }
 
 .intro-about {
-  padding-top: 5.5em;
+  padding-top: 8%;
 }
+
+@media screen and (max-width: $breakpoint-sm) {
+  .intro-about {
+  padding-top: 5em;
+}
+  }
 
 /**
  * iPad with portrait orientation.

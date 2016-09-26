@@ -961,6 +961,8 @@ a.project-link:hover {
     padding-right: 1%; }
     .project-intro .caption h6 {
       padding-bottom: 10px; }
+  .project-intro .lg-col-4 {
+    padding-right: 3%; }
 
 .project-footer-content {
   width: 33.33333%;
@@ -1123,8 +1125,11 @@ a.project-link:hover {
   padding-bottom: 25vh; }
 
 .intro-about {
-  padding-top: 5.5em; }
+  padding-top: 8%; }
 
+@media screen and (max-width: 40em) {
+  .intro-about {
+    padding-top: 5em; } }
 /**
  * iPad with portrait orientation.
 */
