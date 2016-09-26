@@ -35,6 +35,12 @@ body {
   white-space: nowrap;
 }
 
+@media screen and (max-width: $breakpoint-sm) {
+.no-wrap {
+  white-space: normal;
+}
+}
+
 .flip-text {
   -webkit-transform:rotate(-180deg);
   -moz-transform:rotate(-180deg);
@@ -45,6 +51,7 @@ body {
 }
 
 .clear-link {
+  border-bottom: 0 !important;
   a {
   border-bottom: 0;
   }
@@ -511,7 +518,7 @@ $project-padding: 2em;
   padding-left: 0;
   padding-right: 0;
 }
-  .intro {
+  .intro, .intro-about {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -541,6 +548,10 @@ $intro-padding: .25;
 .intro {
   padding-top: 100vh*$intro-padding;
   padding-bottom: 100vh*$intro-padding;
+}
+
+.intro-about {
+  padding-top: 15%;
 }
 
 /**

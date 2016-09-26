@@ -267,7 +267,7 @@ h1,
 .h1 {
   font-size: 32px;
   letter-spacing: 0.07em;
-  line-height: 1.25em; }
+  line-height: 1.45em; }
 
 h2,
 .h2 {
@@ -758,6 +758,9 @@ body {
 .no-wrap {
   white-space: nowrap; }
 
+@media screen and (max-width: 40em) {
+  .no-wrap {
+    white-space: normal; } }
 .flip-text {
   -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
@@ -766,8 +769,10 @@ body {
   ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); }
 
-.clear-link a {
-  border-bottom: 0; }
+.clear-link {
+  border-bottom: 0 !important; }
+  .clear-link a {
+    border-bottom: 0; }
 
 body {
   background: #000000;
@@ -1094,7 +1099,7 @@ li {
     padding-left: 0;
     padding-right: 0; }
 
-  .intro {
+  .intro, .intro-about {
     padding-left: 20px;
     padding-right: 20px; } }
 @media screen and (min-width: 64em) {
@@ -1112,6 +1117,9 @@ li {
 .intro {
   padding-top: 25vh;
   padding-bottom: 25vh; }
+
+.intro-about {
+  padding-top: 15%; }
 
 /**
  * iPad with portrait orientation.
