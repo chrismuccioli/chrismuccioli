@@ -897,19 +897,23 @@ li {
   width: 100%;
   height: 100%;
   overflow: hidden; }
-  .project-block a.project-slide-link {
-    position: absolute;
-    max-width: 100%;
-    height: 800px;
-    display: block; }
-  .project-block a.project-slide-link:hover {
-    background-position: center -150px; }
   .project-block .slide {
     width: 100vw;
     height: 800px;
     overflow: hidden;
     position: relative;
     background-size: cover; }
+
+a.project-link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: block;
+  z-index: 10;
+  border: 0; }
+
+a.project-link:hover {
+  background-position: center -150px; }
 
 .slides {
   visibility: hidden;
